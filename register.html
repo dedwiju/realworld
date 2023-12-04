@@ -1,0 +1,103 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="referrer" content="no-referrer" />
+  <title>Conduit</title>
+  <link
+    href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    href="//fonts.googleapis.com/css?family=Titillium+Web:700|Source+Serif+Pro:400,700|Merriweather+Sans:400,700|Source+Sans+Pro:400,300,600,700,300italic,400italic,600italic,700italic"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link rel="stylesheet" href="//demo.productionready.io/main.css" />
+  <link rel="stylesheet" href="./styles/register.css" />
+  <script src="./scripts/register.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="/">conduit</a>
+        <ul class="nav navbar-nav pull-xs-right">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/login.html">Sign in</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/register.html">Sign up</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="auth-page">
+    <div class="container page">
+      <div class="row">
+        <div class="col-md-6 offset-md-3 col-xs-12">
+          <h1 class="text-xs-center">Sign up</h1>
+          <p class="text-xs-center">
+            <a href="/login.html">Have an account?</a>
+          </p>
+          <ul class="error-messages error-email">
+            <li>email has already been taken</li>
+          </ul>
+          <ul class="error-messages error-username">
+            <li>username has already been taken</li>
+          </ul>
+          <ul class="error-messages error-both">
+            <li>email has already been taken</li>
+            <li>username has already been taken</li>
+          </ul>
+          <form>
+            <fieldset class="form-group">
+              <input
+                class="form-control form-control-lg"
+                type="text"
+                placeholder="Username"
+                id="username"
+              />
+            </fieldset>
+            <fieldset class="form-group">
+              <input
+                class="form-control form-control-lg"
+                type="text"
+                placeholder="Email"
+                id="email"
+              />
+            </fieldset>
+            <fieldset class="form-group">
+              <input
+                class="form-control form-control-lg"
+                type="password"
+                placeholder="Password"
+                autocomplete="off"
+                id="password"
+              />
+            </fieldset>
+            <button
+              class="btn btn-lg btn-primary pull-xs-right"
+              onclick="postUsers(event)"
+            >
+              Sign up
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <a href="/" class="logo-font">conduit</a>
+      <span class="attribution">
+        An interactive learning project from
+        <a href="https://thinkster.io">Thinkster</a>. Code &amp; design licensed
+        under MIT.
+      </span>
+    </div>
+  </footer>
+</body>
