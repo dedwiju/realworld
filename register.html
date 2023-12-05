@@ -53,7 +53,16 @@
             <li>email has already been taken</li>
             <li>username has already been taken</li>
           </ul>
-          <form>
+          <ul class="error-messages email-blank">
+            <li>email can't be blank</li>
+          </ul>
+          <ul class="error-messages username-blank">
+            <li>username can't be blank</li>
+          </ul>
+          <ul class="error-messages password-blank">
+            <li>password can't be blank</li>
+          </ul>
+          <form onsubmit="return false;">
             <fieldset class="form-group">
               <input
                 class="form-control form-control-lg"
@@ -65,7 +74,7 @@
             <fieldset class="form-group">
               <input
                 class="form-control form-control-lg"
-                type="text"
+                type="email"
                 placeholder="Email"
                 id="email"
               />
